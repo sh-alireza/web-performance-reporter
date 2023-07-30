@@ -1,0 +1,6 @@
+celery==5.3.1
+fastapi==0.100.0
+lighthouse_python_plus==1.2.0
+tqdm==4.65.0
+uvicorn==0.23.1
+python-multipart==0.0.6

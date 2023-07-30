@@ -1,0 +1,42 @@
+version: '3.3'
+
+services:
+    lighthouse_python:
+        build:
+            context: .
+            dockerfile: Dockerfile
+        image: lighthouse_python:v1.0
+        hostname: lighthouse_python
+        container_name: lighthouse_python
+        restart: always
+        environment:
+            - BROKER_SERVICE_HOST=myrabbit
+            - CRAWLER_SERVICE_HOST=lighthouse_python
+            - WORKER_COUNT=4
+        networks:
+            - services_net
+        depends_on:
+            - myrabbit
+        volumes:
+            - lighthouse_outs:/outputs:rw
+        ports:
+            - 8091:8080
+
+    myrabbit:
+        image: rabbitmq:3.10.25
+        hostname: myrabbit
+        container_name: myrabbit
+        restart: always
+        networks:
+            - services_net
+        environment:
+            - RABBITMQ_DEFAULT_USER=admin
+            - RABBITMQ_DEFAULT_PASS=admin
+
+networks:
+  services_net:
+
+
+volumes:
+  lighthouse_outs:
+
