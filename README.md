@@ -1,7 +1,8 @@
 # Web Performance Reporter
-![image](https://github.com/sh-alireza/web-performance-reporter/assets/75808544/ccdec2be-3adc-4ae2-9085-3577ad78317a)
+![main page](https://github.com/sh-alireza/web-performance-reporter/assets/75808544/b7a33d96-6d2c-4fd2-a66e-de7b6eb838d4)
 
 ## Description
+
 The Web Performance Reporter is a simple yet powerful tool for website developers seeking to improve website performance. Leveraging the power of Lighthouse through the use of the [lighthouse-python-plus](https://github.com/sh-alireza/lighthouse-python-plus) package. The tool is designed to handle multiple requests to the API with ease, thanks to the use of Celery and RabbitMQ. 
 Also this tool can compare the performance of old and new hosts in a single CSV file. This feature makes it easy for developers to see the impact of any changes made to a website and identify areas that require further optimization.
 
@@ -14,7 +15,7 @@ Also this tool can compare the performance of old and new hosts in a single CSV 
 ```
 
 ### lighthouse app:
-![image](https://github.com/sh-alireza/web-performance-reporter/assets/75808544/6b5b1792-6a60-4319-a29e-1fd0e8f4d0db)
+![lighthouse](https://github.com/sh-alireza/web-performance-reporter/assets/75808544/ff9259de-2378-448d-998f-1ccfe72c61c9)
 
 - host_1 (required): The primary host for performance testing.
 
@@ -33,22 +34,24 @@ Also this tool can compare the performance of old and new hosts in a single CSV 
 - input_urls (required): This parameter requires a CSV file in the format shown in the [sample_inputs](sample_inputs.csv) file in this repository.
 
 ### output:
-![image](https://github.com/sh-alireza/web-performance-reporter/assets/75808544/2d6adbc0-d79a-4e12-ae76-c59c178f971e)
+![output](https://github.com/sh-alireza/web-performance-reporter/assets/75808544/0537a64a-0f62-4f47-b44b-de0b10d790aa)
 
 The output will consist of a task ID and a static output file link.
 
 ### status:
-![image](https://github.com/sh-alireza/web-performance-reporter/assets/75808544/5a78657e-17f6-47d1-b60e-a4eb44a18bbb)
+![status](https://github.com/sh-alireza/web-performance-reporter/assets/75808544/8c86c4e5-e3f6-4b33-85f5-3a027d47a383)
 
 You can use the provided task ID to check its status, which can be pending, failed, or successful.
 
 ### pending tasks:
-![image](https://github.com/sh-alireza/web-performance-reporter/assets/75808544/1bd16d8b-80a5-4658-b97e-fd929c1c2473)
+![pending tasks](https://github.com/sh-alireza/web-performance-reporter/assets/75808544/2a2d4747-4c73-4cee-889a-96d2d7bfa3d0)
+
 
 You can view all pending tasks and their corresponding task IDs.
 
 ### delete task:
-![image](https://github.com/sh-alireza/web-performance-reporter/assets/75808544/b7dc2187-ca7c-494f-9077-f76ac50c83e2)
+![delete task](https://github.com/sh-alireza/web-performance-reporter/assets/75808544/e1fbbcff-e0fa-423d-aa1e-cb4d382fc2d4)
+
 
 You can delete a task using its corresponding task ID.
 
