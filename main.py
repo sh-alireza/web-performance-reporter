@@ -245,7 +245,6 @@ async def start(
         )
     
     return {"task_id":task.id,
-            "output_path":output_path,
             "output_link":f"/static/{output_path.replace('/outputs/','')}"}
 
 # Define a new endpoint for checking the status of a Celery task
